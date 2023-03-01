@@ -265,6 +265,9 @@ body {
   .header._dropdown .middle__back-call {
     top: 390px;
   }
+  .header .middle {
+    height: 70px;
+  }
 }
 @media (max-width: 360px) {
   .header._dropdown .button {
@@ -423,7 +426,7 @@ body {
 }
 @media (max-width: 400px) {
   .first-screen__content {
-    padding-bottom: 40%;
+    padding: 8% 0 30%;
   }
 }
 .first-screen__content :not(:last-child) {
@@ -500,6 +503,11 @@ body {
 .special-offers__body {
   padding: 4.57rem 0 1.79rem;
 }
+@media (max-width: 479.98px) {
+  .special-offers__body {
+    padding: 3rem 0 1rem;
+  }
+}
 .special-offers__title {
   font-weight: 700;
   font-size: 1.7rem;
@@ -507,7 +515,7 @@ body {
 }
 @media (max-width: 479.98px) {
   .special-offers__title {
-    margin-left: 5%;
+    margin: 0 0 2rem 5%;
   }
 }
 .special-offers__row {
@@ -547,6 +555,11 @@ body {
 }
 .offer :not(:last-child) {
   margin-bottom: 7.8%;
+}
+@media (max-width: 479.98px) {
+  .offer :not(:last-child) {
+    margin-bottom: 4%;
+  }
 }
 .offer__img {
   height: 170px;
@@ -612,6 +625,11 @@ body {
 }
 .card__content :not(:last-child) {
   margin-bottom: 10%;
+}
+@media (max-width: 479.98px) {
+  .card__content :not(:last-child) {
+    margin-bottom: 7%;
+  }
 }
 @media (max-width: 992.98px) and (min-width: 600px) {
   .card__content {

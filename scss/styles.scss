@@ -177,7 +177,7 @@ body {
       }
 
       @media (max-width: 400px) {
-         padding-bottom: 40%;
+         padding: 8% 0 30%;
       }
 
       :not(:last-child) {
@@ -261,6 +261,10 @@ body {
 .special-offers {
    &__body {
       padding: 4.57rem 0 1.79rem;
+
+      @media (max-width: $media4 + px) {
+         padding: 3rem 0 1rem;
+      }
    }
 
    &__title {
@@ -269,7 +273,7 @@ body {
       margin-bottom: 2.7rem;
 
       @media (max-width: $media4 + px) {
-         margin-left: 5%;
+         margin: 0 0 2rem 5%;
       }
    }
 
@@ -315,6 +319,10 @@ body {
 
    :not(:last-child) {
       margin-bottom: 7.8%;
+
+      @media (max-width: $media4 + px) {
+         margin-bottom: 4%;
+      }
    }
 
    &__img {
@@ -390,6 +398,10 @@ body {
 
       :not(:last-child) {
          margin-bottom: 10%;
+
+         @media (max-width: $media4 + px) {
+            margin-bottom: 7%;
+         }
       }
 
       @media (max-width: $media2 + px) and (min-width: 600px) {
