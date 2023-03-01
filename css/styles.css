@@ -211,8 +211,10 @@ body {
 
 @media (max-width: 767.98px) {
   .header {
-    position: relative;
-    padding-top: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
   }
   .header .burger {
     display: flex;
@@ -224,7 +226,6 @@ body {
   }
   .header .middle {
     height: 90px;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -247,6 +248,7 @@ body {
     top: 90px;
     left: 0;
     right: 0;
+    z-index: 5;
     height: auto;
     padding: 10% 0 3%;
   }
@@ -268,9 +270,6 @@ body {
   }
 }
 @media (max-width: 479.98px) {
-  .header {
-    padding-top: 70px;
-  }
   .header .middle {
     height: 70px;
   }
@@ -554,6 +553,7 @@ body {
     padding: 0 15%;
   }
 }
+
 .offer {
   background-color: #ffffff;
   display: flex;

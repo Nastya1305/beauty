@@ -28,3 +28,13 @@ function onMenuLinkClick(e) {
    }
    e.preventDefault();
 }
+
+window.addEventListener('resize', addPaddingForHeader);
+window.addEventListener('load', addPaddingForHeader);
+
+function addPaddingForHeader() {
+   if (document.documentElement.clientWidth <= 767.98)
+      document.body.style.paddingTop = header.offsetHeight + "px";
+   else
+      document.body.style.paddingTop = 0;
+}

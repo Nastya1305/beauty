@@ -1,7 +1,9 @@
 .header {
    @media (max-width: $media3 + px) {
-      position: relative;
-      padding-top: 90px;
+      position: fixed;
+      top: 0;
+      z-index: 100;
+      width: 100%;
 
       .burger {
          display: flex;
@@ -15,7 +17,7 @@
 
       .middle {
          height: 90px;
-         position: fixed;
+
          top: 0;
          left: 0;
          width: 100%;
@@ -40,6 +42,7 @@
             top: 90px;
             left: 0;
             right: 0;
+            z-index: 5;
             height: auto;
             padding: 10% 0 3%;
          }
@@ -64,8 +67,6 @@
    }
 
    @media (max-width: $media4 + px) {
-      padding-top: 70px;
-
       .middle {
          height: 70px;
       }
