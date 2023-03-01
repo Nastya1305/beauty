@@ -212,6 +212,7 @@ body {
 @media (max-width: 767.98px) {
   .header {
     position: relative;
+    padding-top: 90px;
   }
   .header .burger {
     display: flex;
@@ -223,6 +224,11 @@ body {
   }
   .header .middle {
     height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
   }
   .header._dropdown {
     height: 100vh;
@@ -262,11 +268,14 @@ body {
   }
 }
 @media (max-width: 479.98px) {
-  .header._dropdown .middle__back-call {
-    top: 390px;
+  .header {
+    padding-top: 70px;
   }
   .header .middle {
     height: 70px;
+  }
+  .header._dropdown .middle__back-call {
+    top: 390px;
   }
 }
 @media (max-width: 360px) {

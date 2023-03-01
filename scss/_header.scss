@@ -1,6 +1,7 @@
 .header {
    @media (max-width: $media3 + px) {
       position: relative;
+      padding-top: 90px;
 
       .burger {
          display: flex;
@@ -14,6 +15,11 @@
 
       .middle {
          height: 90px;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         z-index: 10;
       }
 
       &._dropdown {
@@ -58,14 +64,16 @@
    }
 
    @media (max-width: $media4 + px) {
+      padding-top: 70px;
+
+      .middle {
+         height: 70px;
+      }
+
       &._dropdown {
          .middle__back-call {
             top: 390px;
          }
-      }
-
-      .middle {
-         height: 70px;
       }
    }
 
