@@ -1,0 +1,140 @@
+.footer {
+   background-color: #ffffff;
+
+   &__body {
+      height: 100%;
+      padding: 2.5% 0;
+      display: flex;
+      align-items: center;
+      row-gap: 20px;
+
+      @media (max-width: 500px) {
+         flex-direction: column;
+      }
+   }
+
+   &__column {
+      flex: 0 1 33.333%;
+
+      @media (max-width: 500px) {
+         flex: 0 1 100%;
+      }
+   }
+
+   &__social-media-list {
+      display: flex;
+
+      flex-wrap: wrap;
+      max-width: 260px;
+      margin: 0 -10px;
+
+      @media (max-width: $media3 + px) {
+         max-width: 130px;
+      }
+
+      @media (max-width: 500px) {
+         max-width: none;
+      }
+   }
+
+   &__social-media-column {
+      flex: 0 1 25%;
+      padding: 0 10px;
+      margin: 5px 0;
+   }
+
+   address {
+      font-style: normal;
+      margin: 0 auto;
+      text-align: center;
+
+      @media (max-width: $media2 + px) and (min-width: 500px) {
+         width: 130px;
+      }
+   }
+
+   &__back-call {
+      @media (max-width: $media1 + px) {
+         .button {
+            padding: 6px 20px;
+         }
+      }
+
+      @media (max-width: $media3 + px) {
+         .button {
+            padding: 6px 12px;
+         }
+      }
+   }
+}
+
+.social-media {
+   border: 2px solid #66c05d;
+   border-radius: 50%;
+
+   display: block;
+   width: 3.2rem;
+   height: 3.2rem;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   &__img {
+      fill: #66c05d;
+   }
+
+   &__youtube {
+      width: 49%;
+      height: 33%;
+      &:hover {
+         fill: #ff0000;
+      }
+   }
+
+   &__vk {
+      width: 62%;
+      height: 33%;
+      &:hover {
+         fill: #0079ff;
+      }
+   }
+
+   &__facebook {
+      height: 44%;
+      width: 44%;
+      &:hover {
+         fill: #1877f2;
+      }
+   }
+
+   &__instagram {
+      width: 49%;
+      height: 49%;
+      &:hover {
+         fill: #e14d65;
+      }
+   }
+}
+
+.copyright {
+   color: #828282;
+
+   &__body {
+      padding: 25px 0;
+      display: flex;
+      justify-content: space-between;
+      row-gap: 8px;
+
+      @media (max-width: 650px) {
+         flex-direction: column;
+      }
+   }
+
+   &__rights {
+      flex: 0 1 70%;
+   }
+
+   &__policy {
+   }
+}
